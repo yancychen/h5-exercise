@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+	 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+	 <!-- 参考：http://blog.csdn.net/foamflower/article/details/8729817 -->
+	
+	<script src="../commons/libs/jquery.js"></script>
+	<script src="../commons/google-code-prettify/prettify.js"></script>
+	<script src="../commons/google-code-prettify/demo.js"></script>
+	<link type="text/css" rel="stylesheet" href="../commons/google-code-prettify/prettify.css"/>
+
+	<div class="preblock">
+		<!--实在是无语了，在IE8中还是不能用-->
+	</div>
+	<!--IE中使用Canvas需要加上这段JS-->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script type="text/javascript" src="../commons/libs/canvas-text.js"></script>
+		<script type="text/javascript" src="../commons/libs/excanvas.js"></script>
+	<![endif]-->
+
+
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+	  canvas{
+		background-color:red;
+	  }
+    </style>
+  </head> 
+  <body>
+    <canvas id="canvas" width="578" height="200">
+		您的浏览器不支持<canvas>元素。
+	</canvas>
+	<div id="support" width="578" height="200"></div>
+
+    <script>
+		$(function(){
+			var canvas = document.getElementById('canvas');
+			var context = canvas.getContext('2d');
+			
+
+			// do cool things with the context
+			context.font = '40pt Calibri';
+			context.fillStyle = 'blue';
+
+			context.fillText('Hello World!', 150, 100);
+
+		});
+    </script>
+  </body>
+</html>      

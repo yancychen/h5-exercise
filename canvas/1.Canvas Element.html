@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<script src="../commons/libs/jquery.js"></script>
+	<script src="../commons/google-code-prettify/prettify.js"></script>
+	<script src="../commons/google-code-prettify/demo.js"></script>
+	<link type="text/css" rel="stylesheet" href="../commons/google-code-prettify/prettify.css"/>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script type="text/javascript" src="../commons/libs/canvas-text.js"></script>
+		<script type="text/javascript" src="../commons/libs/excanvas.js"></script>
+	<![endif]-->
+
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+	  canvas{
+		background-color:red;
+	  }
+    </style>
+  </head> 
+  <body>
+    <canvas id="canvas" width="578" height="200"></canvas>
+
+<div class="preblock">
+    <script>
+      var canvas = document.getElementById('canvas');
+      var context = canvas.getContext('2d');
+
+      // do cool things with the context
+      context.font = '40pt Calibri';
+      context.fillStyle = 'blue';
+      context.fillText('Hello World!', 150, 100);
+
+    </script>
+</div>
+
+  </body>
+</html>      
